@@ -1,0 +1,23 @@
+{
+  "name": "sms-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --check server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "multer": "^2.2.0",
+    "nodemon": "^3.1.14",
+    "p-limit": "^3.1.0",
+    "twilio": "^6.0.2",
+    "xlsx": "^0.18.5"
+  }
+}

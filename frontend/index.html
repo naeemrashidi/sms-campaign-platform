@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Twilio SMS</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1>Bulk Campaign Tool</h1>
+
+        <form id="campaignForm" method="post">
+            <label>Upload Excel</label>
+            <input type="file" id="excel" accept=".xlsx">
+
+
+            <label>Message</label>
+
+            <textarea id="message" placeholder="Enter your message. Use {{name}}, {{link}}, {{promo_code}} to personalize from your Excel columns."></textarea>
+
+
+            <label>Channel</label>
+
+            <select id="channel">
+
+                <option value="sms">SMS</option>
+
+                <option value="whatsapp">WhatsApp</option>
+
+                <option value="both">Both</option>
+
+            </select>
+
+
+            <div class="button-row">
+                <button type="submit" id="sendBtn">
+                    Send Campaign
+                </button>
+
+                <button type="button" id="stopBtn" disabled>
+                    Stop
+                </button>
+            </div>
+        </form>
+
+
+        <h3>Campaign Status</h3>
+
+        <div id="status" class="status">
+
+        </div>
+
+        <h3>Delivery Log</h3>
+
+        <table id="logTable" class="log-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Direction</th>
+                    <th>Channel</th>
+                    <th>Contact</th>
+                    <th>Status</th>
+                    <th>Error</th>
+                </tr>
+            </thead>
+            <tbody id="logTableBody"></tbody>
+        </table>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

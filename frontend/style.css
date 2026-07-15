@@ -1,0 +1,72 @@
+body {
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button-row {
+    display: flex;
+    gap: 12px;
+}
+
+.button-row button {
+    width: 50%;
+}
+
+.button-row button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+#stopBtn {
+    background: #8b1e1e;
+}
+
+
+
+.status {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 10px;
+}
+
+.log-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.log-table th,
+.log-table td {
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
