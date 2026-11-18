@@ -62,3 +62,8 @@ On the Messaging Service used above, in the Twilio Console:
 ## About This Repository
 
 This project was verified end to end before publishing: dependency install, server boot, and `/health` and static frontend responses were all confirmed working. See [LICENSE](LICENSE) for usage terms.
+
+## License
+
+This project is open source and licensed under the [MIT License](LICENSE).
+Third-party dependencies remain subject to their respective licenses.
